@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formular</title>
+</head>
+
+<body class="height-xl">
+    <!-- header -->
+    <header>
+        <nav>
+            <a href="../../index.html" class="logo"><img src="../img/logo.svg"></a>
+            <div class="navigation">
+                <a href="#">Subscribe & Contact</a>
+                <ul class="social">
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Youtube</a></li>
+                </ul>
+                <a href="#">DE</a>
+            </div>
+        </nav>
+    </header>
+    <!-- aside nav -->
+    <aside>
+        <nav class="sidenav">
+            <ul class="lines">
+                <li>
+                    <a class="links" href="../../index.html">ABOUT</a>
+                </li>
+                <li>
+                    <a class="links" href="lounger.html">LOUNGER</a>
+                </li>
+                <li>
+                    <a class="links" href="experience.html">EXPERIENCE</a>
+                </li>
+                <li>
+                    <a class="links" href="inspiration.html">INSPIRATION</a>
+                </li>
+                <li>
+                    <a class="links" href="shop.html">SHOP</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="contact">
+        <section class="img">
+            <img class="img full-img" src="../img/contact.jpeg">
+        </section>
+        <section class="text">
+            <article>
+                <h1 class="title form-title">Contact us</h1>
+                <form onsubmit="return false">
+                    <label class="text" for="name">Name:</label>
+                    <input class="form-name transition" type="text" name="name" id="input-name" required>
+                    <label class="text" for="email">Email:</label>
+                    <input class="form-email transition" type="email" name="email" id="input-email" required>
+                    <label class="text" for="message">Message:</label>
+                    <textarea class="form-message transition" name="message" id="input-message"></textarea>
+                    <div>
+                        <input class="form-checkbox" type="checkbox" name="newsletter" id="check-newsletter">
+                        <label class="text" for="newsletter">Sign up for our Newsletter</label>
+                    </div>
+                    <input class="form-button transition" type="submit" value="Submit" id="submit-button"
+                        onclick="subscribe()">
+                    <input class="form-button transition" type="reset" value="Reset">
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
